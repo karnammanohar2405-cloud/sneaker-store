@@ -1,0 +1,117 @@
+nav {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 20px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  background: rgba(15, 15, 15, 0.2);
+
+  backdrop-filter: blur(12px);
+
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+
+  font-size: 1.8rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+
+  gap: 35px;
+
+  list-style: none;
+
+  color: white;
+
+  font-weight: 500;
+}
+
+.nav-links li {
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #d1d5db;
+}
+
+.nav-icons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.nav-btn,
+.profile-btn {
+  background: transparent;
+
+  color: white;
+
+  border: 1px solid rgba(255,255,255,0.3);
+
+  padding: 10px 18px;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  backdrop-filter: blur(10px);
+}
+
+.profile-btn {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+}
+
+.nav-btn:hover,
+.profile-btn:hover {
+  background: rgba(255,255,255,0.08);
+
+  border-color: white;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-btn {
+    padding: 8px 12px;
+  }
+}
