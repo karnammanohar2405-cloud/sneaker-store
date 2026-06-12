@@ -1,4 +1,4 @@
-.login-page {
+.register-page {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -12,13 +12,14 @@
   position: relative;
 }
 
-.overlay {
+.register-page::before {
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
 }
 
-.login-card {
+.register-card {
   position: relative;
   z-index: 1;
 
@@ -37,20 +38,20 @@
   border-radius: 15px;
 }
 
-.login-card h1 {
+.register-card h1 {
   color: white;
   font-size: 2rem;
 }
 
-.login-card h2 {
+.register-card h2 {
   color: white;
 }
 
-.login-card p {
+.register-card p {
   color: white;
 }
 
-.login-card input {
+.register-card input {
   padding: 12px;
   border: none;
   border-radius: 8px;
@@ -58,35 +59,35 @@
   font-size: 16px;
 }
 
-.login-btn,
-.register-btn {
+.register-btn,
+.login-btn {
   padding: 12px;
-  border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
 }
 
-.login-btn {
+.register-btn {
   background: #ff6b57;
   color: white;
+  border: none;
 }
 
-.login-btn:hover {
+.register-btn:hover {
   opacity: 0.9;
 }
 
-.register-text {
+.login-text {
   color: white;
   margin-top: 10px;
 }
 
-.register-btn {
+.login-btn {
   background: transparent;
-  border: 1px solid white;
   color: white;
+  border: 1px solid white;
 }
 
-.register-btn:hover {
+.login-btn:hover {
   background: rgba(255, 255, 255, 0.1);
 }
