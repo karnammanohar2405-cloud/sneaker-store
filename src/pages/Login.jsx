@@ -11,7 +11,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const res = await fetch(
-        "http://localhost:5000/api/auth/login",
+        "https://sneaker-store-1-5qub.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {
