@@ -12,7 +12,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://sneaker-store-1-5qub.onrender.com"
+      "https://sneaker-store-woad-two.vercel.app/"
     ],
     credentials: true,
   })
